@@ -1,0 +1,99 @@
+<section class="reservation-form section--padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Formulaire de réservation -->
+        <div class="card shadow-lg">
+          <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Réserver une Voiture</h2>
+          </div>
+          <div class="card-body">
+            <form method="post">
+              <!-- Nom du client -->
+              <div class="mb-3">
+                <label for="customerName" class="form-label">Nom du Client</label>
+                <input class="form-control" type="text" id="customerName" name="customerName" placeholder="Votre Nom"
+                  required />
+              </div>
+
+              <!-- Date de début -->
+              <div class="mb-3">
+                <label for="startDate" class="form-label">Date de début</label>
+                <input class="form-control" type="date" id="startDate" name="startDate" required />
+              </div>
+
+              <!-- Date de fin -->
+              <div class="mb-3">
+                <label for="endDate" class="form-label">Date de fin</label>
+                <input class="form-control" type="date" id="endDate" name="endDate" required />
+              </div>
+
+              <!-- Nombre de passagers -->
+              <div class="mb-3">
+                <label for="numPassengers" class="form-label">Nombre de passagers</label>
+                <input class="form-control" type="number" id="numPassengers" name="numPassengers" required />
+              </div>
+
+              <!-- Boutons de soumission et d'annulation -->
+              <button type="reset" class="btn btn-danger">Annuler</button>
+              <button type="submit" class="btn btn-success">Réserver</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informations sur la voiture -->
+      <div class="col-lg-6">
+        <div class="card shadow-lg">
+          <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Détails de la Voiture</h2>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <!-- Image de la voiture -->
+              <div class="col-md-12 mb-3 text-center">
+                <img src="assets/images/car-img.jpg" alt="Image de la voiture" class="img-fluid" />
+              </div>
+
+              <!-- Marque de la voiture -->
+              <div class="col-md-6 mb-3">
+                <h5><i class="la la-car me-2"></i> Marque :</h5>
+                <p>Toyota</p>
+              </div>
+
+              <!-- Modèle de la voiture -->
+              <div class="col-md-6 mb-3">
+                <h5><i class="la la-cogs me-2"></i> Modèle :</h5>
+                <p>Corolla</p>
+              </div>
+
+              <!-- N° de série -->
+              <div class="col-md-6 mb-3">
+                <h5><i class="la la-barcode me-2"></i> N° de Série :</h5>
+                <p>123456789ABC</p>
+              </div>
+
+              <!-- Nombre de passagers -->
+              <div class="col-md-6 mb-3">
+                <h5><i class="la la-users me-2"></i> Passagers :</h5>
+                <p>5</p>
+              </div>
+
+              <!-- Roue de secours -->
+              <div class="col-md-6 mb-3">
+                <h5><i class="la la-wrench me-2"></i> Roue de Secours :</h5>
+                <p>Oui</p>
+              </div>
+
+              <!-- Autres détails -->
+              <div class="col-md-6 mb-3">
+                <h5><i class="la la-cogs me-2"></i> Autres Détails :</h5>
+                <p>Climatisation, GPS, Bluetooth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

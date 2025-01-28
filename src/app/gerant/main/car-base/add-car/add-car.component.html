@@ -1,0 +1,112 @@
+<section class="listing-form section--padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <div class="card shadow-lg">
+          <div class="card-header bg-success text-white">
+            <h2 class="mb-0">Ajouter une Voiture</h2>
+          </div>
+          <div class="card-body">
+            <form method="post">
+              <div class="row">
+                <!-- Nom de la voiture -->
+                <div class="col-md-6 mb-3">
+                  <label for="carName" class="form-label">Nom de la Voiture</label>
+                  <input class="form-control" type="text" id="carName" name="carName" placeholder="Exemple : Audi A3"
+                    required />
+                </div>
+
+                <!-- Prix par jour -->
+                <div class="col-md-6 mb-3">
+                  <label for="pricePerDay" class="form-label">Prix par jour (XOF)</label>
+                  <input class="form-control" type="number" id="pricePerDay" name="pricePerDay"
+                    placeholder="Exemple : 150" required />
+                </div>
+
+                <!-- Marque -->
+                <div class="col-md-6 mb-3">
+                  <label for="category" class="form-label">Marque</label>
+                  <select class="form-select" id="category" name="category" required>
+                    <option value="" disabled selected>Sélectionnez la marque</option>
+                    <option value="Berline">Berline</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Luxe">Luxe</option>
+                    <option value="Utilitaire">Utilitaire</option>
+                  </select>
+                </div>
+
+                <!-- Model -->
+                <div class="col-md-6 mb-3">
+                  <label for="category" class="form-label">Model</label>
+                  <select class="form-select" id="category" name="category" required>
+                    <option value="" disabled selected>Sélectionnez un model</option>
+                    <option value="Berline">Berline</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Luxe">Luxe</option>
+                    <option value="Utilitaire">Utilitaire</option>
+                  </select>
+                </div>
+
+                <!-- Type -->
+                <div class="col-md-6 mb-3">
+                  <label for="category" class="form-label">Type</label>
+                  <select class="form-select" id="category" name="category" required>
+                    <option value="" disabled selected>Sélectionnez un type</option>
+                    <option value="Berline">Berline</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Luxe">Luxe</option>
+                    <option value="Utilitaire">Utilitaire</option>
+                  </select>
+                </div>
+
+                
+
+                <!-- Image -->
+                <div class="col-md-6 mb-3">
+                  <label for="carImage" class="form-label">Image de la Voiture</label>
+                  <input class="form-control" type="file" id="carImage" name="carImage" accept="image/*" />
+                </div>
+
+                <!-- Année de fabrication -->
+                <div class="col-md-6 mb-3">
+                  <label for="manufactureYear" class="form-label">Année de Fabrication</label>
+                  <input class="form-control" type="number" id="manufactureYear" name="manufactureYear"
+                    placeholder="Exemple : 2023" required />
+                </div>
+
+                <!-- Couleur -->
+                <div class="col-md-6 mb-3">
+                  <label for="color" class="form-label">Couleur</label>
+                  <input class="form-control" type="text" id="color" name="color" placeholder="Exemple : Rouge"
+                    required />
+                </div>
+
+                <!-- Passagers -->
+                <div class="col-md-6 mb-3">
+                  <label for="color" class="form-label">Nombre de passagers</label>
+                  <input class="form-control" type="number" id="color" name="color" placeholder="Exemple : Rouge" required />
+                </div>
+
+                <!-- Disponibilité -->
+                <div class="col-md-6 mb-3">
+                  <label for="availability" class="form-label">Disponibilité</label>
+                  <select class="form-select" id="availability" name="availability" required>
+                    <option value="Disponible">Disponible</option>
+                    <option value="Non disponible">Non disponible</option>
+                  </select>
+                </div>
+
+                
+              </div>
+              <button type="reset" class="btn btn-danger">Annuler <i class="la la-times ms-1"></i></button>
+              <button type="submit" class="btn btn-success">Ajouter <i class="la la-arrow-right ms-1"></i> </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
