@@ -62,6 +62,17 @@
             <li><a routerLink="list-cars">Liste des voitures</a></li>
           </ul>
         </li>
+        <!-- Type -->
+        <li>
+          <span class="side-menu-icon toggle-menu-icon">
+            <i class="la la-angle-down"></i>
+          </span>
+          <a href="#"><i class="la la-car me-2 text-color-2"></i>Types</a>
+          <ul class="toggle-drop-menu">
+            <li><a routerLink="add-type">Ajouter une voiture</a></li>
+            <li><a routerLink="list-types">Liste des voitures</a></li>
+          </ul>
+        </li>
         <!-- Réservations -->
         <li>
           <span class="side-menu-icon toggle-menu-icon">
@@ -84,8 +95,8 @@
             ><i class="la la-users me-2 text-color-4"></i>Clients</a
           >
           <ul class="toggle-drop-menu">
-            <li><a href="admin-clients.html">Liste des clients</a></li>
-            <li><a href="admin-client-details.html">Détails client</a></li>
+            <li><a routerLink="add-client">Ajouter un client</a></li>
+            <li><a routerLink="list-clients">Liste des clients</a></li>
           </ul>
         </li>
         <!-- Finances -->
