@@ -20,13 +20,13 @@
                 <div class="col-md-6 mb-3">
                   <label for="pricePerDay" class="form-label">Prix par jour (XOF)</label>
                   <input class="form-control" type="number" id="pricePerDay" name="pricePerDay"
-                    placeholder="Exemple : 150" required />
+                    [(ngModel)]="voiture.prixParJour" placeholder="Exemple : 150" required />
                 </div>
 
                 <!-- Marque -->
                 <div class="col-md-6 mb-3">
                   <label for="category" class="form-label">Marque</label>
-                  <select class="form-select" id="category" name="category" required>
+                  <select class="form-select" id="category" name="marque" [(ngModel)]="voiture.modele.marque" required>
                     <option value="" disabled selected>Sélectionnez la marque</option>
                     <option value="Berline">Berline</option>
                     <option value="SUV">SUV</option>
@@ -39,7 +39,7 @@
                 <!-- Model -->
                 <div class="col-md-6 mb-3">
                   <label for="category" class="form-label">Model</label>
-                  <select class="form-select" id="category" name="category" required>
+                  <select class="form-select" id="category" name="category" [(ngModel)]="voiture.modele" required>
                     <option value="" disabled selected>Sélectionnez un model</option>
                     <option value="Berline">Berline</option>
                     <option value="SUV">SUV</option>
@@ -52,7 +52,7 @@
                 <!-- Type -->
                 <div class="col-md-6 mb-3">
                   <label for="category" class="form-label">Type</label>
-                  <select class="form-select" id="category" name="category" required>
+                  <select class="form-select" id="category" name="type" [(ngModel)]="voiture.type" required>
                     <option value="" disabled selected>Sélectionnez un type</option>
                     <option value="Berline">Berline</option>
                     <option value="SUV">SUV</option>
@@ -74,7 +74,7 @@
                 <div class="col-md-6 mb-3">
                   <label for="manufactureYear" class="form-label">Année de Fabrication</label>
                   <input class="form-control" type="number" id="manufactureYear" name="manufactureYear"
-                    placeholder="Exemple : 2023" required />
+                    [(ngModel)]="voiture.anneeFabrication" placeholder="Exemple : 2023" required />
                 </div>
 
                 <!-- Couleur -->
@@ -94,7 +94,8 @@
                 <!-- Disponibilité -->
                 <div class="col-md-6 mb-3">
                   <label for="availability" class="form-label">Disponibilité</label>
-                  <select class="form-select" id="availability" name="availability" required>
+                  <select class="form-select" id="availability" name="availability" [(ngModel)]="voiture.disponibilite"
+                    required>
                     <option value="Disponible">Disponible</option>
                     <option value="Non disponible">Non disponible</option>
                   </select>
