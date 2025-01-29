@@ -3,14 +3,11 @@ import { Model } from "./model";
 import { Type } from './type';
 
 export interface Car {
-
-    nom :String;
-    prix :number;
-    marque :Marque;
-    model :Model;
-    type :Type;
-    annee : Date;
-    couleur :String;
-    nombreDePassager :number;
-    disponibilite :boolean;
+  nom: String;
+  prixParJour: number;
+  marque: Marque;
+  model: Model;
+  type: Type;
+  anneefabrication: Date;
+  disponibilite: boolean;
 }
