@@ -1,8 +1,10 @@
 import { Reservation } from "./reservation";
 
 export interface Paiement {
-    montant :number;
-    moyenDePaiement :String;
-    dateDePaiement :Date;
-    reservationId :Reservation;
+    reservation:Reservation;
+    montant: number;
+    datePaiement :Date;
+    moyenPaiement :string;
+    id:string;
+
 }

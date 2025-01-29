@@ -1,3 +1,7 @@
 export interface Type {
-    nom :String;
+    id :string;
+    nom:string;
+
+    description :String;
+
 }
