@@ -16,15 +16,13 @@ export class AddTypeComponent {
   constructor(private service : TypeService) {
   }
 
-  createType(): Type{
-    alert(this.oType.nom)
-    try{
-      this.service.createType(this.oType);
-    }
-    catch (e) {
-      alert(e);
-    }
-    console.log(this.oType.nom)
-    return this.oType;
+  save(): void {
+    this.service.createType(this.oType).subscribe(() => {
+      alert("Type ajouté avec succès !");
+    }, () => {
+      alert("Une erreur est survenue !");
+    });
   }
+
+
 }
