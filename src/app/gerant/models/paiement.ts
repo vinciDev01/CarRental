@@ -6,4 +6,5 @@ export interface Paiement {
     datePaiement :Date;
     moyenPaiement :string;
     id:string;
+
 }

@@ -6,4 +6,5 @@ export interface Client {
     telephone: string;
     adresse: string;
     motDePasse : string; 
+
 }
