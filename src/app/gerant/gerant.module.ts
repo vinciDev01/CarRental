@@ -23,7 +23,10 @@ import { ClientBaseComponent } from './main/client-base/client-base.component';
 import { AddClientComponent } from './main/client-base/add-client/add-client.component';
 import { ListClientsComponent } from './main/client-base/list-clients/list-clients.component';
 import { CreerReservationComponent } from './main/reservation-base/creer-reservation/creer-reservation.component';
-
+import { TypeBaseComponent } from './main/type-base/type-base.component';
+import { AddTypeComponent } from './main/type-base/add-type/add-type.component';
+import { ListTypesComponent } from './main/type-base/list-types/list-types.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     GerantComponent,
@@ -47,10 +50,14 @@ import { CreerReservationComponent } from './main/reservation-base/creer-reserva
     ClientBaseComponent,
     AddClientComponent,
     ListClientsComponent,
+    TypeBaseComponent,
+    AddTypeComponent,
+    ListTypesComponent,
   ],
   imports: [
     CommonModule,
-    GerantRoutingModule
+    GerantRoutingModule,
+    FormsModule
   ]
 })
 export class GerantModule { }

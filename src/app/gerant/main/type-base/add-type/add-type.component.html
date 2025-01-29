@@ -1,0 +1,35 @@
+<section class="section--padding">
+    <div class="container">
+        <div class="row">
+            <!-- Formulaire d'ajout d'un type de voiture -->
+            <div class="col-lg-6 mx-auto">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h2 class="mb-0">Ajouter un Type de Voiture</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <!-- Nom du type de voiture -->
+                            <div class="mb-3">
+                                <label for="typeName" class="form-label">Nom du Type</label>
+                                <input class="form-control" type="text" id="typeName" name="typeName"
+                                    placeholder="Exemple : SUV" required />
+                            </div>
+
+                            <!-- Description -->
+                            <div class="mb-3">
+                                <label for="typeDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="typeDescription" name="typeDescription" rows="3"
+                                    placeholder="Décrivez ce type de voiture" required></textarea>
+                            </div>
+
+                            <!-- Boutons -->
+                                <button type="reset" class="btn btn-danger">Annuler</button>
+                                <button type="submit" class="btn btn-success">Ajouter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

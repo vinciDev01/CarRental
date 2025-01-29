@@ -1,0 +1,66 @@
+<section class="customer-registration section--padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h2 class="mb-0">Enregistrement du Client</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <!-- Nom et Prénom -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Ex: Kokou" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                        placeholder="Ex: KB" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Email -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Ex: gbosso.ip@gmail.com" required>
+                                </div>
+
+                                <!-- Numéro de téléphone -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
+                                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber"
+                                        placeholder="Ex: +228 45 12 12 20" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Adresse -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="address" class="form-label">Adresse</label>
+                                    <input type="text" class="form-control" id="address" name="address"
+                                        placeholder="Ex: Gbossito" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Numéro de permis -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="licenseNumber" class="form-label">Numéro de Permis</label>
+                                    <input type="text" class="form-control" id="licenseNumber" name="licenseNumber"
+                                        placeholder="Ex: 1234567890" required>
+                                </div>
+                            </div>
+                            <button type="reset" class="btn btn-danger me-3">Annuler</button>
+                            <button type="submit" class="btn btn-success">S'enregistrer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

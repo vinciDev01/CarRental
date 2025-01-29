@@ -12,6 +12,10 @@ import { AddMarqueComponent } from './main/marque-base/add-marque/add-marque.com
 import { ListMarquesComponent } from './main/marque-base/list-marques/list-marques.component';
 import { AddModelComponent } from './main/model-base/add-model/add-model.component';
 import { ListModelsComponent } from './main/model-base/list-models/list-models.component';
+import { AddClientComponent } from './main/client-base/add-client/add-client.component';
+import { ListClientsComponent } from './main/client-base/list-clients/list-clients.component';
+import { AddTypeComponent } from './main/type-base/add-type/add-type.component';
+import { ListTypesComponent } from './main/type-base/list-types/list-types.component';
 
 const routes: Routes = [
   {
@@ -20,18 +24,24 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: BodyComponent },
 
-      { path: 'add-car', component: AddCarComponent },
-      { path: 'list-cars', component: ListCarsComponent },
-      { path: 'info-car', component: InfoCarComponent },
-
-      { path: 'add-reservation', component: CreerReservationComponent },
-      { path: 'list-reservations', component: ListeReservationsComponent },
-
       { path: 'add-marque', component: AddMarqueComponent },
       { path: 'list-marques', component: ListMarquesComponent },
 
       { path: 'add-model', component: AddModelComponent },
-      { path: 'list-marques', component: ListModelsComponent },
+      { path: 'list-models', component: ListModelsComponent },
+
+      { path: 'add-car', component: AddCarComponent },
+      { path: 'list-cars', component: ListCarsComponent },
+      { path: 'info-car', component: InfoCarComponent },
+
+      { path: 'add-type', component: AddTypeComponent },
+      { path: 'list-types', component: ListTypesComponent },
+
+      { path: 'add-reservation', component: CreerReservationComponent },
+      { path: 'list-reservations', component: ListeReservationsComponent },
+
+      { path: 'add-client', component: AddClientComponent },
+      { path: 'list-clients', component: ListClientsComponent },
     ],
   },
 ];
