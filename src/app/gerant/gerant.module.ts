@@ -26,7 +26,8 @@ import { CreerReservationComponent } from './main/reservation-base/creer-reserva
 import { TypeBaseComponent } from './main/type-base/type-base.component';
 import { AddTypeComponent } from './main/type-base/add-type/add-type.component';
 import { ListTypesComponent } from './main/type-base/list-types/list-types.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,9 @@ import {FormsModule} from "@angular/forms";
     imports: [
         CommonModule,
         GerantRoutingModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule,
+        ReactiveFormsModule
     ]
 })
 export class GerantModule { }
