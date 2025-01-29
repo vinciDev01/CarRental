@@ -7,10 +7,10 @@
             <div class="mb-3">
                 <label for="brandName" class="form-label">Nom de la Marque</label>
                 <input type="text" class="form-control" id="brandName" placeholder="Entrez le nom de la marque"
-                    required>
+                    required [(ngModel)]="oMarque.nom" >
             </div>
 
-            
+
             <button type="reset" class="btn btn-danger">Annuler <i class="la la-times ms-1"></i> </button>
             <button type="submit" class="btn btn-success">Créer la Marque <i class="la la-arrow-right ms-1"></i> </button>
         </form>

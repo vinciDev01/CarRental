@@ -13,12 +13,12 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="lastName" class="form-label">Nom</label>
                                     <input type="text" class="form-control" id="lastName" name="lastName"
-                                        placeholder="Ex: Kokou" required>
+                                        placeholder="Ex: Kokou" required [(ngModel)]="oClient.nom" >
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="firstName" class="form-label">Prénom</label>
                                     <input type="text" class="form-control" id="firstName" name="firstName"
-                                        placeholder="Ex: KB" required>
+                                        placeholder="Ex: KB" required [(ngModel)]="oClient.prenom" >
                                 </div>
                             </div>
 
@@ -27,14 +27,14 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Ex: gbosso.ip@gmail.com" required>
+                                        placeholder="Ex: gbosso.ip@gmail.com" required [(ngModel)]="oClient.email" >
                                 </div>
 
                                 <!-- Numéro de téléphone -->
                                 <div class="col-md-6 mb-3">
                                     <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
                                     <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber"
-                                        placeholder="Ex: +228 45 12 12 20" required>
+                                        placeholder="Ex: +228 45 12 12 20" required [(ngModel)]="oClient.telephone" >
                                 </div>
                             </div>
 
@@ -43,12 +43,13 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="address" class="form-label">Adresse</label>
                                     <input type="text" class="form-control" id="address" name="address"
-                                        placeholder="Ex: Gbossito" required>
+                                        placeholder="Ex: Gbossito" required [(ngModel)]="oClient.adresse" >
                                 </div>
-                                <!-- Numéro de permis -->
+                                <!-- Mot de passe -->
                                 <div class="col-md-6 mb-3">
                                     <label for="motDePassword" class="form-label">Mot de passe</label>
-                                    <input type="password" class="form-control" id="motDePassword" name="motDePassword" required>
+                                    <input type="password" class="form-control" id="motDePassword" name="motDePassword" required
+                                           [(ngModel)]="oClient.motdepasse" >
                                 </div>
                             </div>
 

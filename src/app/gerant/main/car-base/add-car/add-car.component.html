@@ -13,20 +13,20 @@
                 <div class="col-md-6 mb-3">
                   <label for="carName" class="form-label">Nom de la Voiture</label>
                   <input class="form-control" type="text" id="carName" name="carName" placeholder="Exemple : Audi A3"
-                    required />
+                    required [(ngModel)]="oCar.nom" />
                 </div>
 
                 <!-- Prix par jour -->
                 <div class="col-md-6 mb-3">
                   <label for="pricePerDay" class="form-label">Prix par jour (XOF)</label>
                   <input class="form-control" type="number" id="pricePerDay" name="pricePerDay"
-                    placeholder="Exemple : 150" required />
+                    placeholder="Exemple : 150" required [(ngModel)]="oCar.prixParJour" />
                 </div>
 
                 <!-- Marque -->
                 <div class="col-md-6 mb-3">
                   <label for="category" class="form-label">Marque</label>
-                  <select class="form-select" id="category" name="category" required>
+                  <select class="form-select" id="category" name="category" required [(ngModel)]="oCar.marque" >
                     <option value="" disabled selected>Sélectionnez la marque</option>
                     <option value="Berline">Berline</option>
                     <option value="SUV">SUV</option>
@@ -39,7 +39,7 @@
                 <!-- Model -->
                 <div class="col-md-6 mb-3">
                   <label for="category" class="form-label">Model</label>
-                  <select class="form-select" id="category" name="category" required>
+                  <select class="form-select" id="model" name="model" required [(ngModel)]="oCar.model" >
                     <option value="" disabled selected>Sélectionnez un model</option>
                     <option value="Berline">Berline</option>
                     <option value="SUV">SUV</option>
@@ -52,7 +52,7 @@
                 <!-- Type -->
                 <div class="col-md-6 mb-3">
                   <label for="category" class="form-label">Type</label>
-                  <select class="form-select" id="category" name="category" required>
+                  <select class="form-select" id="type" name="type" required [(ngModel)]="oCar.type" >
                     <option value="" disabled selected>Sélectionnez un type</option>
                     <option value="Berline">Berline</option>
                     <option value="SUV">SUV</option>
@@ -66,19 +66,19 @@
                 <div class="col-md-6 mb-3">
                   <label for="manufactureYear" class="form-label">Année de Fabrication</label>
                   <input class="form-control" type="number" id="manufactureYear" name="manufactureYear"
-                    placeholder="Exemple : 2023" required />
+                    placeholder="Exemple : 2023" required [(ngModel)]="oCar.anneefabrication" />
                 </div>
 
                 <!-- Disponibilité -->
                 <div class="col-md-6 mb-3">
                   <label for="availability" class="form-label">Disponibilité</label>
-                  <select class="form-select" id="availability" name="availability" required>
+                  <select class="form-select" id="availability" name="availability" required [(ngModel)]="oCar.disponibilite" >
                     <option value="Disponible">Disponible</option>
                     <option value="Non disponible">Non disponible</option>
                   </select>
                 </div>
 
-                
+
               </div>
               <button type="reset" class="btn btn-danger">Annuler <i class="la la-times ms-1"></i></button>
               <button type="submit" class="btn btn-success">Ajouter <i class="la la-arrow-right ms-1"></i> </button>

@@ -4,5 +4,7 @@ export interface Client {
     prenom :String;
     email :String;
     adresse :String;
-    numPermis :String;
+    motdepasse :String;
+    telephone :String;
+
 }
