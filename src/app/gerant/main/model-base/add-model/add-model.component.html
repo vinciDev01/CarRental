@@ -1,0 +1,40 @@
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0 text-white">Ajouter un Modèle de Voiture</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/list-models">
+      Liste des modeles
+    </button>
+
+  </div>
+  <div class="card-body">
+    <div class="card-body">
+      <form method="post">
+        <!-- Marque -->
+        <div class="mb-3">
+          <label for="brand" class="form-label">Marque</label>
+          <select class="form-select" id="brand" name="brand" required [(ngModel)]="oModele.marque" >
+            <option value="" disabled selected>Sélectionnez une marque</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+            <option value="Honda">Honda</option>
+            <option value="Tesla">Tesla</option>
+            <option value="BMW">BMW</option>
+          </select>
+        </div>
+
+        <!-- Nom du modèle -->
+        <div class="mb-3">
+          <label for="modelName" class="form-label">Nom du Modèle</label>
+          <input type="text" class="form-control" id="modelName" name="modelName" placeholder="Ex: Tesla Model S"
+                 required [(ngModel)]="oModele.nom" >
+        </div>
+
+        <!-- Boutons -->
+        <button type="reset" class="btn btn-danger me-3">Annuler</button>
+        <button type="submit" class="btn btn-success">Ajouter le Modèle</button>
+      </form>
+    </div>
+  </div>
+</div>
+

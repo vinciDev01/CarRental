@@ -1,0 +1,60 @@
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0 text-white">Liste des Voitures</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/add-car">
+      Ajouter une voiture
+    </button>
+
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Nom</th>
+        <th>Prix par jour ( XOF)</th>
+        <th>Marque</th>
+        <th>Modèle</th>
+        <th>Type</th>
+        <th>Année de Fabrication</th>
+        <th>Disponibilité</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- Exemple de ligne de voiture -->
+      <tr>
+        <td>1</td>
+        <td>Audi A3</td>
+        <td>150 XOF</td>
+        <td><i class="la la-car"></i> Audi</td>
+        <td>A3</td>
+        <td>Berline</td>
+        <td>2023</td>
+        <td><span class="badge bg-success">Disponible</span></td>
+        <td>
+          <button class="btn btn-warning btn-sm"><i class="la la-edit"></i> Modifier</button>
+          <button class="btn btn-danger btn-sm"><i class="la la-trash"></i> Supprimer</button>
+        </td>
+      </tr>
+      <!-- Vous pouvez ajouter d'autres voitures ici -->
+      <tr>
+        <td>2</td>
+        <td>BMW X5</td>
+        <td>200 XOF</td>
+        <td><i class="la la-car"></i> BMW</td>
+        <td>X5</td>
+        <td>SUV</td>
+        <td>2022</td>
+        <td><span class="badge bg-danger">Non disponible</span></td>
+        <td>
+          <button class="btn btn-warning btn-sm"><i class="la la-edit"></i> Modifier</button>
+          <button class="btn btn-danger btn-sm"><i class="la la-trash"></i> Supprimer</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

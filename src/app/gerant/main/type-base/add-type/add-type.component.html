@@ -1,0 +1,30 @@
+<section class="card-page">
+
+  <!-- Formulaire d'ajout d'un type de voiture -->
+  <div class=" mx-auto">
+    <div class="card shadow-lg">
+      <div class="card-header bg-primary text-white text-center d-flex justify-content-between">
+        <h2 class="mb-0">Ajouter un Type de Voiture</h2>
+
+        <button type="button" class="btn btn-warning" routerLink="/gerant/list-types">
+          Liste des types de voiture
+        </button>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="save()">
+          <!-- Nom du type de voiture -->
+          <div class="mb-3">
+            <label for="typeName" class="form-label">Nom du Type</label>
+            <input class="form-control" type="text" id="typeName" name="typeName"
+                   placeholder="Exemple : SUV" required [(ngModel)]="oType.nom"/>
+          </div>
+
+          <!-- Boutons -->
+          <button type="reset" class="btn btn-danger">Annuler</button>
+          <button type="submit" class="btn btn-success">Ajouter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>

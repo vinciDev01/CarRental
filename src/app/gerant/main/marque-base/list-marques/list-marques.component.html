@@ -1,0 +1,46 @@
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0">Liste des Marques</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/add-marque">
+      Créer une marque
+    </button>
+
+  </div>
+  <div class="card-body">
+    @if (isloading) {
+      <p>Chargement en cours...</p>
+    } @else {
+      <table class="table table-striped table-hover">
+        <thead class="table-dark text-center">
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody class="text-center">
+          @for (marque of oMarques; track marque.id) {
+
+            <tr>
+              <td>{{ marque.id }}</td>
+              <td>{{ marque.nom }}</td>
+              <td>
+                <button class="btn btn-primary btn-sm">
+                  Modifier
+                </button>
+                <button class="btn btn-danger btn-sm">
+                  Supprimer
+                </button>
+              </td>
+            </tr>
+
+          }
+
+        </tbody>
+      </table>
+    }
+  </div>
+</div>
+

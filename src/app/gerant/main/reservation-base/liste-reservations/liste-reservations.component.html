@@ -1,0 +1,51 @@
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0 text-white">Liste des réservations</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/add-reservation">
+      Ajouter une réservation
+    </button>
+
+  </div>
+  <div class="card-body">
+    <table class="custom-table">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Client</th>
+        <th>Voiture</th>
+        <th>Date Début</th>
+        <th>Date Fin</th>
+        <th>Statut</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let reservation of reservations">
+        <td>{{ reservation.id }}</td>
+        <td>{{ reservation.client }}</td>
+        <td>{{ reservation.voiture }}</td>
+        <td>{{ reservation.dateDebut | date : "dd/MM/yyyy" }}</td>
+        <td>{{ reservation.dateFin | date : "dd/MM/yyyy" }}</td>
+        <td>
+          <span
+            [ngClass]="{
+              'status-confirmed': reservation.status === 'Confirmée',
+              'status-pending': reservation.status === 'En attente',
+              'status-cancelled': reservation.status === 'Annulée'
+            }"
+          >
+            {{ reservation.status }}
+          </span>
+        </td>
+        <td>
+          <button class="delete-btn" (click)="onDelete(reservation.id)">
+            Supprimer
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

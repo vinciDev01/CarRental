@@ -1,0 +1,10 @@
+h2.mb-0{
+    text-align: center;
+    /*mettre en lettres capitales*/
+    text-transform: uppercase;
+    color: white;
+}
+
+button[type="submit"]{
+    float : right;
+}

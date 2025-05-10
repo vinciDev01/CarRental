@@ -1,0 +1,63 @@
+
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0 text-white">Liste des Clients</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/add-client">
+      Ajouter un client
+    </button>
+
+  </div>
+  <div class="card-body">
+    <div class="card-body">
+      <table class="table table-striped table-hover">
+        <thead class="table-dark text-center">
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prénoms</th>
+          <th>Email</th>
+          <th>Adresse</th>
+          <th>N° Permis</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody class="text-center">
+        <tr>
+          <td>1</td>
+          <td>Dupont</td>
+          <td>Jean</td>
+          <td>jean.dupont&#64;email.com</td>
+          <td>12 Rue de Paris</td>
+          <td>12345678</td>
+          <td>
+            <button class="btn btn-primary btn-sm">
+              Modifier
+            </button>
+            <button class="btn btn-danger btn-sm">
+              Supprimer
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Martin</td>
+          <td>Sophie</td>
+          <td>sophie.martin&#64;email.com</td>
+          <td>45 Avenue République</td>
+          <td>87654321</td>
+          <td>
+            <button class="btn btn-primary btn-sm">
+              Modifier
+            </button>
+            <button class="btn btn-danger btn-sm">
+              Supprimer
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

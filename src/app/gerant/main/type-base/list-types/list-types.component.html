@@ -1,0 +1,28 @@
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0 text-white">Liste des Types de Voitures</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/add-type">
+      Ajouter un type de voiture
+    </button>
+
+  </div>
+  <div class="card-body">
+    <table class="table table-striped table-hover">
+      <thead class="table-dark text-center">
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody class="text-center">
+      <tr *ngFor="let type of listType">
+        <td>1</td>
+        <td>{{ type.nom }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

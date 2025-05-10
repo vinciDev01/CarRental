@@ -1,0 +1,22 @@
+<div class="card shadow-lg mx-auto card-page">
+  <div class="card-header bg-primary d-flex justify-content-between">
+    <h2 class="mb-0">Créer une Marque</h2>
+
+    <button type="button" class="btn btn-warning" routerLink="/gerant/list-marques">
+      Liste des marques
+    </button>
+
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="save()">
+      <div class="mb-3">
+
+        <input type="text" name="nom" class="form-control" id="brandName" placeholder="Entrez le nom de la marque"
+               required [(ngModel)]="oMarque.nom">
+      </div>
+
+      <button type="reset" class="btn btn-danger">Annuler <i class="la la-times ms-1"></i></button>
+      <button type="submit" class="btn btn-success">Créer la Marque <i class="la la-arrow-right ms-1"></i></button>
+    </form>
+  </div>
+</div>
